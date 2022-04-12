@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <thead>
+        <th>商品一覧</th>
+        <td><%= link_to"新規登録(仮)", new_admin_item_path %></td><br>
+      </thead>
+      <tbody>
+        <tr>
+          <th>商品ID</th>
+          <th>商品名</th>
+          <th>税別価格</th><br>
+        </tr>
+        <% @item.each do |item| %>
+        <tr>
+          <td><%= item.id %></td>
+          <td>
+            <%= link_to admin_item_path(item.id) do %>
+            <%= item.name %>
+            <% end %>
+          </td>
+          <td>
+            <%= item.price.to_s(:delimited) %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </div>
+  </div>
+</div>

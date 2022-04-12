@@ -1,0 +1,35 @@
+<h4>入力情報</h4>
+<table>
+   <%= form_with model: @order, url: new_order_path, local: true do |f| %>
+  <th>支払方法</th>
+  <tr>
+    <td>
+      <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
+      <%= f.label :payment_method, Order.payment_methods_i18n[:credit_card] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.radio_button :payment_method, Order.payment_methods.key(1) %>
+      <%= f.label :payment_method, Order.payment_methods_i18n[:transfer]%>
+    </td>
+  </tr>
+   <th>お届け先</th>
+  <tr>
+    <td>
+      <%= f.radio_button :address, "" ) %>
+      <%= f.label : %>
+    </td>
+  </tr>
+    <tr>
+      <td>
+
+      </td>
+  </tr>
+    <tr>
+      <td>
+
+    </td>
+  </tr>
+   <% end %>
+</table>
