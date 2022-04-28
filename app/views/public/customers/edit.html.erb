@@ -1,2 +1,42 @@
-<h1>Public::Customers#edit</h1>
-<p>Find me in app/views/public/customers/edit.html.erb</p>
+<table>
+  <thead>
+    <tr>
+      <th>会員情報編集</th>
+    </tr>
+  </thead>
+  <tbody>
+  <%= form_with model: @customer,url: customer_path,local:true do |f| %>
+    <tr>
+      <th>氏名</th>
+      <td><%= f.text_field :first_name %></td>
+      <td><%= f.text_field :last_name %></td>
+    </tr>
+    <tr>
+      <th>フリガナ</th>
+      <td><%= f.text_field :first_name_kana %></td>
+      <td><%= f.text_field :last_name_kana %></td>
+    </tr>
+    <tr>
+      <th>郵便番号</th>
+      <td><%= f.text_field :postal_code %></td>
+    </tr>
+    <tr>
+      <th>住所</th>
+      <td><%= f.text_field :address, class: "hoge", size: 40 %></td>
+    </tr>
+    <tr>
+      <th>電話番号</th>
+      <td><%= f.text_field :telephone_number %></td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td><%= f.text_field :email %></td>
+    </tr>
+      <td><%= f.submit "変更を保存", class: "btn btn-success"%></td>
+    </tr>
+    </tr>
+      <td><%= link_to "退会する", customers_unsbscride_path, class: "btn btn-success" %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

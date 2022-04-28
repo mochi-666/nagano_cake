@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>本当に退会しますか？</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        退会すると、会員登録機能や<br>
+        これまでの購入履歴が閲覧できなくなります。<br>
+        退会する場合は、「退会する」をクリックしてください
+      </td>
+    </tr>
+    <tr>
+      <td><%= link_to "退会しない", customers_my_page_path, class: "btn btn-success"%></td>
+      <td><%= link_to "退会する", customers_withdraw_path, method: :patch %></td>
+    </tr>
+  </tbody>
+</table>

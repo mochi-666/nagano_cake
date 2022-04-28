@@ -19,15 +19,15 @@ Rails.application.routes.draw do
     get '/' => 'homes#top'
     get 'about' => 'homes#about'
     resources :items, only:[:index, :show]
-    resources :customers, only:[:edit, :update, :destroy]
     get 'customers/my_page' => 'customers#show'
     get 'customers/unsbscride' => 'customers#create'
     patch 'customers/withdraw' => 'customers#destroy'
+    resources :customers, only:[:edit, :update]
     delete 'cart_items/destroy_all' => 'cart_items#destroy_all'
     resources :cart_items, only:[:index, :update, :destroy, :create]
-    resources :orders, only:[:new, :index, :show]
-    get 'orders/comfirm' => 'orders#comfirm'
+    post 'orders/comfirm' => 'orders#comfirm'
     get 'orders/complete' => 'orders#complete'
+    resources :orders, only:[:new, :index, :show, :create]
     resources :addresses, only:[:index, :edit, :create, :update, :destroy]
 
 

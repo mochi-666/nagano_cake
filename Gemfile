@@ -69,3 +69,4 @@ gem "refile-mini_magick"
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem "enum_help"
+gem 'pry-rails'

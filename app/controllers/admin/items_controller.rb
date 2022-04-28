@@ -12,7 +12,7 @@ class Admin::ItemsController < ApplicationController
     @item.save
     redirect_to admin_item_path(@item.id)
   end
-
+  
   def show
     @item = Item.find(params[:id])
     @price = (@item.price * 1.1).floor.to_s(:delimited)
