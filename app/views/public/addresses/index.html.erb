@@ -2,5 +2,44 @@
   <thead>
     <th>配送先登録/一覧</th>
   </thead>
-  <tbody
+  <tbody>
+    <%= form_with model: @address, url: addresses_path, local: true do |f| %>
+    <tr>
+     <td>
+       <%= f.label :postal_code, "郵便番号(ハイフンなし)" %>
+       <%= f.text_field :postal_code %>
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <%= f.label :address, "住所" %>
+        <%= f.text_field :address %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= f.label :address_name, "宛名" %>
+        <%= f.text_field :address_name %>
+        <%= f.submit "新規登録" %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>郵便番号</td>
+      <td>住所</td>
+      <td>宛名</td>
+      <td colspan="3"></td>
+    </tr>
+    <% @addresses.each do |address| %>
+    <tr>
+      <td><%= address.postal_code %></td>
+      <td><%= address.address %></td>
+      <td><%= address.name %></td>
+      <td><%= link_to "編集する", edit_address_path, class: "btn btn-success" %></td>
+      <td><%= link_to "削除する", address_path, method: :delete, class: 'btn btn-sm btn-danger' %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>

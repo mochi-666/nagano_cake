@@ -36183,3 +36183,1443 @@ Processing by Public::AddressesController#index as HTML
 Completed 200 OK in 149ms (Views: 147.6ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for 14.11.131.33 at 2022-04-29 12:01:34 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 740ms (Views: 714.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 12:10:30 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 116ms (Views: 90.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/orders" for 14.11.131.33 at 2022-04-29 12:10:31 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::OrdersController#index as HTML
+  Rendering public/orders/index.html.erb within layouts/application
+  Rendered public/orders/index.html.erb within layouts/application (0.3ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 166ms (Views: 164.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 12:10:32 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/1/edit" for 14.11.131.33 at 2022-04-29 12:10:33 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:7
+  Rendering public/customers/edit.html.erb within layouts/application
+  Rendered public/customers/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 143ms (Views: 139.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-29 12:10:34 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 90ms (Views: 88.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-29 12:11:11 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (1.3ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 12:11:22 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 91ms (Views: 87.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/1/edit" for 14.11.131.33 at 2022-04-29 12:11:28 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:7
+  Rendering public/customers/edit.html.erb within layouts/application
+  Rendered public/customers/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-29 12:11:30 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-29 12:11:58 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 12:29:46 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 137ms (Views: 127.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 12:29:47 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 112ms (Views: 107.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/addresses" for 14.11.131.33 at 2022-04-29 12:29:50 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"public/addresses"}, missing required keys: [:id]):
+    3:     <th>配送先登録/一覧</th>
+    4:   </thead>
+    5:   <tbody>
+    6:     <%= form_with model: @address, url: address_path, local: true do |f| %>
+    7:     <tr>
+    8:      <td>
+    9:        <%= f.label :postal_code, "郵便番号(ハイフンなし)" %>
+  
+app/views/public/addresses/index.html.erb:6:in `_app_views_public_addresses_index_html_erb___2157968641509863033_70306181504360'
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-29 14:58:02 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 156ms (Views: 145.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/addresses" for 14.11.131.33 at 2022-04-29 14:58:08 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 230ms (Views: 225.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 08:13:55 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 642ms (Views: 594.3ms | ActiveRecord: 1.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateOrderItems (20220419122109)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[35mDROP TABLE "order_items"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220419122109"]]
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeAdressesToAddresses (20220414151343)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mALTER TABLE "addresses" RENAME TO "adresses"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220414151343"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateCustomers (20220402055522)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP INDEX "index_customers_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mDROP INDEX "index_customers_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (11.2ms)[0m  [1m[35mDROP TABLE "customers"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220402055522"]]
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrders (20220331085628)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331085628"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20220331084539)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "cart_items"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331084539"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20220331083051)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "items"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331083051"]]
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAdresses (20220331082334)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "adresses"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331082334"]]
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreatePublics (20220331071733)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP INDEX "index_publics_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP INDEX "index_publics_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "publics"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331071733"]]
+  ↳ bin/rails:9
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20220331071605)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mDROP INDEX "index_admins_on_reset_password_token"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP INDEX "index_admins_on_email"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "admins"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220331071605"]]
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20220331071605)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20220331071605_devise_create_admins.rb:5
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331071605_devise_create_admins.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20220331071605_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20220331071605_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331071605"]]
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreatePublics (20220331071733)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "publics" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331071733_devise_create_publics.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_publics_on_email" ON "publics" ("email")[0m
+  ↳ db/migrate/20220331071733_devise_create_publics.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_publics_on_reset_password_token" ON "publics" ("reset_password_token")[0m
+  ↳ db/migrate/20220331071733_devise_create_publics.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331071733"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAdresses (20220331082334)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "adresses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "name" varchar, "postal_code" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331082334_create_adresses.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331082334"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20220331083051)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_id" varchar, "introduction" text, "price" integer, "is_active" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331083051_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331083051"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20220331084539)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "customer_id" integer, "amount" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331084539_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331084539"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrders (20220331085628)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "postal_code" varchar, "address" varchar, "name" varchar, "postage" integer, "total_payment" integer, "payment_method" integer, "salesorder" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220331085628_create_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220331085628"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateCustomers (20220402055522)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "last_name" varchar NOT NULL, "first_name" varchar NOT NULL, "last_name_kana" varchar NOT NULL, "first_name_kana" varchar NOT NULL, "postal_code" varchar NOT NULL, "address" varchar NOT NULL, "telephone_number" varchar NOT NULL, "is_active" boolean DEFAULT 1 NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220402055522_devise_create_customers.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_customers_on_email" ON "customers" ("email")[0m
+  ↳ db/migrate/20220402055522_devise_create_customers.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_customers_on_reset_password_token" ON "customers" ("reset_password_token")[0m
+  ↳ db/migrate/20220402055522_devise_create_customers.rb:47
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220402055522"]]
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeAdressesToAddresses (20220414151343)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "adresses" RENAME TO "addresses"[0m
+  ↳ db/migrate/20220414151343_change_adresses_to_addresses.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220414151343"]]
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrderItems (20220419122109)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "order_id" integer, "price" integer, "amount" integer, "production_status" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20220419122109_create_order_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220419122109"]]
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 08:48:00 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/public/addresses/index.html.erb:40: unknown regexp options - tr
+/home/ec2-user/environment/nagano_cake/app/views/public/addresses/index.html.erb:41: syntax error, unexpected '<'
+    <% end );@output_buffer.safe_a...
+    ^
+/home/ec2-user/environment/nagano_cake/app/views/public/addresses/index.html.erb:47: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/public/addresses/index.html.erb:40: unknown regexp options - tr
+app/views/public/addresses/index.html.erb:41: syntax error, unexpected '<'
+app/views/public/addresses/index.html.erb:47: syntax error, unexpected end-of-input, expecting end
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 08:48:25 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Address:0x00007ff63802c4f8>):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @address.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347739216100'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 08:49:10 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @addresses.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347574585000'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 08:49:24 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Address:0x00007ff629dbbb50>):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @address.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347621586940'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:09:57 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `address' for nil:NilClass):
+  
+app/controllers/public/addresses_controller.rb:3:in `index'
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:19:23 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 163ms (Views: 148.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:25:45 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `address' for nil:NilClass):
+  
+app/controllers/public/addresses_controller.rb:3:in `index'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:33:43 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @addresses.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347620542180'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:33:49 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `address' for nil:NilClass):
+  
+app/controllers/public/addresses_controller.rb:3:in `index'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:34:03 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `address' for nil:NilClass):
+  
+app/controllers/public/addresses_controller.rb:3:in `index'
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:34:08 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @addresses.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347577447600'
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:34:27 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (4.0ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 103ms (Views: 99.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:34:29 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 147ms (Views: 120.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:34:34 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ogy+v7ZdaiAezrDxGWow3vq8qfEPx2mGWBuOTfAmhmGrmht33a/3iJk7lIUehxLjCCYcLYWAVtdp8BSECv3BMg==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ogy+v7ZdaiAezrDxGWow3vq8qfEPx2mGWBuOTfAmhmGrmht33a/3iJk7lIUehxLjCCYcLYWAVtdp8BSECv3BMg==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 417ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:34:41 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTq8EdC9CGQrXqwr9LyKrjqU1sFRSeDYzQWVMw36QMS4tVziCj0mA9gTa+wu2qGot0EYF+xVQFr7uvcsBVGKgQ==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTq8EdC9CGQrXqwr9LyKrjqU1sFRSeDYzQWVMw36QMS4tVziCj0mA9gTa+wu2qGot0EYF+xVQFr7uvcsBVGKgQ==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 401ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:34:50 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JXpckHOsz0Abf99dvjK8k/xn+zAC/iHOI0G15NKyWWvE9bxjqSzhJ+gyGJpkVJeVcbI15r/igUwV/tf72hmTLg==", "customer"=>{"email"=>"aaa@sss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aaa@sss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JXpckHOsz0Abf99dvjK8k/xn+zAC/iHOI0G15NKyWWvE9bxjqSzhJ+gyGJpkVJeVcbI15r/igUwV/tf72hmTLg==", "customer"=>{"email"=>"aaa@sss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 422ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:34:56 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:35:05 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mueTnxH9yK0c2Qxd4zSy4L9u4vC1tEwCf21364Qans17aHNsy33myu+Uy5o5UpnmMrssJgio7IBJ0hX0jLFUiA==", "customer"=>{"email"=>"aaa@sss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aaa@sss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mueTnxH9yK0c2Qxd4zSy4L9u4vC1tEwCf21364Qans17aHNsy33myu+Uy5o5UpnmMrssJgio7IBJ0hX0jLFUiA==", "customer"=>{"email"=>"aaa@sss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 383ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:35:37 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:35:43 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 116ms (Views: 107.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:35:48 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"207meYDLFxLELfd3e2iBGEtHAesotU4OSeHAksDtrIY6wQaKWks5dTdgMLChDqoexpLPPZWp7ox/XqKNyEZmww==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"207meYDLFxLELfd3e2iBGEtHAesotU4OSeHAksDtrIY6wQaKWks5dTdgMLChDqoexpLPPZWp7ox/XqKNyEZmww==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 391ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:35:54 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yHiFvg7j65tBTFgX3vYqSdAzviG61JljiHlw2tW8TUQp92VN1GPF/LIBn9AEkAFPXeZw9wfIOeG+xhLF3ReHAQ==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yHiFvg7j65tBTFgX3vYqSdAzviG61JljiHlw2tW8TUQp92VN1GPF/LIBn9AEkAFPXeZw9wfIOeG+xhLF3ReHAQ==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 404ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-30 11:36:00 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     5:   <tbody>
+     6:     <tr>
+     7:       <th>登録情報</th>
+     8:       <td><%= link_to "編集する", edit_customer_path(current_customer.id), class: "btn btn-success" %></td>
+     9:     </tr>
+    10:     <tr>
+    11:       <td>氏名</td>
+  
+app/views/public/customers/show.html.erb:8:in `_app_views_public_customers_show_html_erb__2661296049125614295_50807480'
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-30 11:36:06 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:11 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 106ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:15 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdVEbuoJJ8hQ7Ou39M7SiSYJneNjXfWWs+zem6Iz/O/8Q+Gmgfu6YNcZz8PzI/C01JMoP+kayseCB0RSWOi7vA==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdVEbuoJJ8hQ7Ou39M7SiSYJneNjXfWWs+zem6Iz/O/8Q+Gmgfu6YNcZz8PzI/C01JMoP+kayseCB0RSWOi7vA==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 379ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:23 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PY1B0jxHdfuM0j9ciqGCBnozyaIN3NLsL5nuh8GkJt7cAqEh5sdbnH+f+JtQx6kA9+YHdLDAcm4ZJoyYyQ/smw==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PY1B0jxHdfuM0j9ciqGCBnozyaIN3NLsL5nuh8GkJt7cAqEh5sdbnH+f+JtQx6kA9+YHdLDAcm4ZJoyYyQ/smw==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 392ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:25 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:27 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:32 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fj2PaLpKGyaehiye7sOSU8rGC5f8SZPHGEtn2z6o3Ervqyqg0biGjhlzCOrpLrBuOFy+S3YOrJYpoP0SxHObGQ==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fj2PaLpKGyaehiye7sOSU8rGC5f8SZPHGEtn2z6o3Ervqyqg0biGjhlzCOrpLrBuOFy+S3YOrJYpoP0SxHObGQ==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 373ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_up" for 14.11.131.33 at 2022-04-30 11:36:34 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering customers/registrations/new.html.erb within layouts/application
+  Rendered customers/shared/_error_messages.html.erb (1.1ms)
+  Rendered customers/registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:41 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 129ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 14.11.131.33 at 2022-04-30 11:36:46 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:36:47 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 109ms (Views: 105.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/sign_up" for 14.11.131.33 at 2022-04-30 11:36:48 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering customers/registrations/new.html.erb within layouts/application
+  Rendered customers/shared/_error_messages.html.erb (0.5ms)
+  Rendered customers/registrations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:36:49 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/sign_up" for 14.11.131.33 at 2022-04-30 11:36:57 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering customers/registrations/new.html.erb within layouts/application
+  Rendered customers/shared/_error_messages.html.erb (0.5ms)
+  Rendered customers/registrations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:36:58 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 174ms (Views: 172.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_up" for 14.11.131.33 at 2022-04-30 11:36:59 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering customers/registrations/new.html.erb within layouts/application
+  Rendered customers/shared/_error_messages.html.erb (0.5ms)
+  Rendered customers/registrations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers" for 14.11.131.33 at 2022-04-30 11:37:22 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7jT/vI+seg5fpBEgTvKo1OpRNqjt111UdPiDoxlfesAWOEHWrMnVeWrYj5ZBn2iaQewxp/ykd9+tLotk1pAyA==", "customer"=>{"first_name"=>"望月", "last_name"=>"敬介", "first_name_kana"=>"モチヅキ", "last_name_kana"=>"ケイスケ", "email"=>"aa@ss", "postal_code"=>"2222222", "address"=>"地獄のサイレントヒル666", "telephone_number"=>"0906660000", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = ? LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Create (2.7ms)[0m  [1m[32mINSERT INTO "customers" ("email", "encrypted_password", "last_name", "first_name", "last_name_kana", "first_name_kana", "postal_code", "address", "telephone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "aa@ss"], ["encrypted_password", "$2a$12$/k0Z2x.dIOROsbMZDFKudet.YFfzIsc/3EJli39b.uY6E66FUk5SW"], ["last_name", "敬介"], ["first_name", "望月"], ["last_name_kana", "ケイスケ"], ["first_name_kana", "モチヅキ"], ["postal_code", "2222222"], ["address", "地獄のサイレントヒル666"], ["telephone_number", "0906660000"], ["created_at", "2022-04-30 11:37:22.339459"], ["updated_at", "2022-04-30 11:37:22.339459"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://fcce381fc3bf4c4ba254998b65bb7c5b.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 306ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:37:22 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (3.7ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-30 11:37:24 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 92ms (Views: 87.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:37:26 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (6.6ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 222ms (Views: 220.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart_items" for 14.11.131.33 at 2022-04-30 11:37:28 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CartItemsController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/cart_items_controller.rb:3
+  Rendering public/cart_items/index.html.erb within layouts/application
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."customer_id" = ?[0m  [["customer_id", 1]]
+  ↳ app/views/public/cart_items/index.html.erb:13
+  Rendered public/cart_items/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 134ms (Views: 114.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:37:31 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (7.4ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart_items" for 14.11.131.33 at 2022-04-30 11:37:37 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CartItemsController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/cart_items_controller.rb:3
+  Rendering public/cart_items/index.html.erb within layouts/application
+  [1m[36mCartItem Load (0.1ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."customer_id" = ?[0m  [["customer_id", 1]]
+  ↳ app/views/public/cart_items/index.html.erb:13
+  Rendered public/cart_items/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 115ms (Views: 110.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:37:38 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (7.2ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-30 11:37:40 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 82.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/1/edit" for 14.11.131.33 at 2022-04-30 11:37:43 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:7
+  Rendering public/customers/edit.html.erb within layouts/application
+  Rendered public/customers/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 107ms (Views: 102.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/unsbscride" for 14.11.131.33 at 2022-04-30 11:37:47 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#create as HTML
+  Rendering public/customers/create.html.erb within layouts/application
+  Rendered public/customers/create.html.erb within layouts/application (0.7ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 14.11.131.33 at 2022-04-30 11:37:49 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" LIMIT ? OFFSET ?[0m  [["LIMIT", 4], ["OFFSET", 0]]
+  ↳ app/views/public/items/index.html.erb:2
+  Rendered public/items/index.html.erb within layouts/application (6.8ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-30 11:37:51 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders" for 14.11.131.33 at 2022-04-30 11:37:53 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::OrdersController#index as HTML
+  Rendering public/orders/index.html.erb within layouts/application
+  Rendered public/orders/index.html.erb within layouts/application (0.4ms)
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/addresses" for 14.11.131.33 at 2022-04-30 11:37:56 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::AddressesController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/addresses_controller.rb:3
+  Rendering public/addresses/index.html.erb within layouts/application
+  Rendered public/addresses/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Customer:0x00007ff62435da00>):
+    32:       <td>宛名</td>
+    33:       <td colspan="3"></td>
+    34:     </tr>
+    35:     <% @addresses.each do |address| %>
+    36:     <tr>
+    37:       <td><%= address.postal_code %></td>
+    38:       <td><%= address.address %></td>
+  
+app/views/public/addresses/index.html.erb:35:in `_app_views_public_addresses_index_html_erb___701533460595904282_70347573092620'
+Started GET "/customers/my_page" for 14.11.131.33 at 2022-04-30 11:37:59 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/customers_controller.rb:3
+  Rendering public/customers/show.html.erb within layouts/application
+  Rendered public/customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 100ms (Views: 96.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/customers/sign_out" for 14.11.131.33 at 2022-04-30 11:38:02 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+UF8E25TIJN0uJlORgIQQTVyFjhgH0UdohNxUuVmHiYYzpzgtNMO9If1XomcZDtHuKfY7t0D5Z+UrBNN7c3UYw=="}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://fcce381fc3bf4c4ba254998b65bb7c5b.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:38:03 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:38:07 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:38:12 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XXfGUXD2LE2xNbg6tRtNHIOh7QWfD0EJR1yLsrDa1kB5u81PUAeO4MbQx/aRNEmrh8+Fo4g+iPRYtg6TvMs1pw==", "customer"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://fcce381fc3bf4c4ba254998b65bb7c5b.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 289ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:38:12 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (3.5ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+Completed 200 OK in 90ms (Views: 87.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/customers/sign_out" for 14.11.131.33 at 2022-04-30 11:38:14 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bOdTI3vAEbyz7g8bT08uA4ovRhNz0cbzQ9GR89hgJncBSmC9LxzQk1fFLc+APtCUwM7xjCoUxd7LV9JKWRJFIQ=="}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://fcce381fc3bf4c4ba254998b65bb7c5b.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.11.131.33 at 2022-04-30 11:38:14 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 169ms (Views: 167.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:23 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:28 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0r+h0ZJTNjJTxqE3OK8k6cE7IcDJjdbAXiZ2HZX4V4R2Mu20iZMvDP4fbFvFvNg5YnhzL90KLCbr4IRvWsKUlg==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0r+h0ZJTNjJTxqE3OK8k6cE7IcDJjdbAXiZ2HZX4V4R2Mu20iZMvDP4fbFvFvNg5YnhzL90KLCbr4IRvWsKUlg==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 366ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:32 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 14.11.131.33 at 2022-04-30 11:38:34 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 14.11.131.33 at 2022-04-30 11:38:36 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:38:37 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 14.11.131.33 at 2022-04-30 11:38:39 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:52 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:55 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:38:59 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJQoOqH1chMn60LaobsWyys9NJv/pnwTz5jIkU2fXA1oGWRfujVrLYoyj7ZcqOobiH5mdOshhvV6XjrjgqWfHw==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJQoOqH1chMn60LaobsWyys9NJv/pnwTz5jIkU2fXA1oGWRfujVrLYoyj7ZcqOobiH5mdOshhvV6XjrjgqWfHw==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 384ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCustomer Load (1.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:40:25 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lg12FxmKQvKvdjC7wxZKLKCa9jvJV0OTlyFGk6uv/c0ygDpyAkpbzAKv/dc+Bbb8A9mk1N3QuXUi57ThZJU+3w==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lg12FxmKQvKvdjC7wxZKLKCa9jvJV0OTlyFGk6uv/c0ygDpyAkpbzAKv/dc+Bbb8A9mk1N3QuXUi57ThZJU+3w==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 409ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:42:03 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tiZDX4LlegQbgLo8lnkvLVQHpOqed+7ytwu29No1VmYSqw86mSVjOrZZd1BratP990T2BYrwFBQCzUSGFQ+VdA==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tiZDX4LlegQbgLo8lnkvLVQHpOqed+7ytwu29No1VmYSqw86mSVjOrZZd1BratP990T2BYrwFBQCzUSGFQ+VdA==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 383ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 14.11.131.33 at 2022-04-30 11:42:08 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering customers/sessions/new.html.erb within layouts/application
+  Rendered customers/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/items/1" for 14.11.131.33 at 2022-04-30 11:42:22 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/items_controller.rb:17
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Item with 'id'=1):
+  
+app/controllers/admin/items_controller.rb:17:in `show'
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:45:29 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfL5j9Y2JDH2gI4IsYRdo6l9GHiNBDKlc0YPiL8nY8Xlf7XqzfY9D1tZQ2RMl6FzCj5Kl5mDyEPGgP36cB2g1w==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (1.6ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.6ms)
+
+
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfL5j9Y2JDH2gI4IsYRdo6l9GHiNBDKlc0YPiL8nY8Xlf7XqzfY9D1tZQ2RMl6FzCj5Kl5mDyEPGgP36cB2g1w==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 389ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mAdmin Create (3.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "aa@ss"], ["encrypted_password", "$2a$12$umio3tgbLlRXgJ/O2D3i8uO4R9KNO77mPiOtG74EnNK2jBM/z7mS."], ["created_at", "2022-04-30 11:47:21.646658"], ["updated_at", "2022-04-30 11:47:21.646658"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+Started GET "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:47:29 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#new as HTML
+  Rendering admin/sessions/new.html.erb within layouts/application
+  Rendered admin/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 150ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/sign_in" for 14.11.131.33 at 2022-04-30 11:47:35 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz2xwEqsu1U0dSV6sM7dTM9hToWNGJyRMBxOZuSeZ9FvsP2lUWyia5ms6BZN3SGcbCIcapmfZneF2rwUK6Skww==", "admin"=>{"email"=>"aa@ss", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aa@ss"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://fcce381fc3bf4c4ba254998b65bb7c5b.vfs.cloud9.us-east-1.amazonaws.com/admin
+Completed 302 Found in 291ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 14.11.131.33 at 2022-04-30 11:47:36 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/homes/top.html.erb:13
+  Rendered admin/homes/top.html.erb within layouts/application (5.3ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 107ms (Views: 101.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/customers" for 14.11.131.33 at 2022-04-30 11:47:46 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::CustomersController#index as HTML
+  Rendering admin/customers/index.html.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/admin/customers/index.html.erb:12
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/admin/customers/index.html.erb:23
+  Rendered admin/customers/index.html.erb within layouts/application (7.9ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 14.11.131.33 at 2022-04-30 11:47:50 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::HomesController#top as HTML
+  Rendering admin/homes/top.html.erb within layouts/application
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/homes/top.html.erb:13
+  Rendered admin/homes/top.html.erb within layouts/application (4.5ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/items" for 14.11.131.33 at 2022-04-30 11:47:51 +0000
+Cannot render console from 14.11.131.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::ItemsController#index as HTML
+  Rendering admin/items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/admin/items/index.html.erb:14
+  Rendered admin/items/index.html.erb within layouts/application (3.2ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 102ms (Views: 100.4ms | ActiveRecord: 0.3ms)
+
+
