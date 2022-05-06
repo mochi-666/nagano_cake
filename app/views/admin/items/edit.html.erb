@@ -1,4 +1,10 @@
 <h1>商品編集</h1>
+<% if @item.errors.any? %>
+  <%= @item.errors.count %>件のエラーが発生しました
+  <% @item.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
 <%= form_with model: @item,url: admin_item_path, local:true do |f| %>
   <h4>商品画像</h4>
   <%= f.attachment_field :image %>

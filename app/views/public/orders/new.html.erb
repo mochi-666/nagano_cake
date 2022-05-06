@@ -1,10 +1,17 @@
 <h4>注文情報入力</h4>
-<table>
-   <%= form_with model: @order, url: orders_comfirm_path, local: true do |f| %>
-  <th>支払方法</th>
+  <% if @address_new.errors.any? %>
+    <%= @address_new.errors.count %>件のエラーが発生しました
+    <% @address_new.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  <% end %>
+  <%= form_with model: @order, url: orders_comfirm_path, local: true do |f| %>
+
+  <table>
+    <th>支払方法</th>
   <tr>
     <td>
-      <%= f.radio_button :payment_method, Order.payment_methods.key(0) %>
+      <%= f.radio_button :payment_method, Order.payment_methods.key(0), checked: true %>
       <%= f.label :payment_method, Order.payment_methods_i18n[:credit_card] %>
     </td>
   </tr>
@@ -17,7 +24,7 @@
    <th>お届け先</th>
   <tr>
     <td>
-      <%= f.radio_button :address_id, 1  %>
+      <%= f.radio_button :address_id, 1, checked: true %>
       <%= f.label :address_id_1, "ご自身の住所" %>
     </td>
   </tr>
@@ -41,7 +48,7 @@
   </tr>
   <tr>
     <td>
-     <%= f.select :address_id, options_from_collection_for_select(Address.all, :id, :full_address) %>
+     <%= f.select :address_select, options_from_collection_for_select(Address.all, :id, :full_address) %>
     </td>
   </tr>
   <tr>
@@ -64,7 +71,7 @@
   </tr>
   <tr>
     <td>
-      <%= f.label :address_name, "宛名" %>form
+      <%= f.label :address_name, "宛名" %>
       <%= f.text_field :address_name %>
     </td>
   </tr>

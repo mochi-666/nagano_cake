@@ -1,17 +1,21 @@
-<table>
-  <tr>
-    <h1>About</h1>
-  </tr>
-  <tr>
-    <th>
-      ながのCAKEは全国発送可能なケーキ屋さんです<br>
-      お子様からお年寄りの方までお召し上がりいただけるよう、<br>
-      様々なバリエーションをご用意しております。<br>
-      また、全国へ発送可能ですので「いつ」でも「どこ」でもご注文いただけます。<br>
-      ぜひご注文ください。
-    </th>
-  </tr>
-  <tr>
-    <td>※画像※</td>
-  </tr>
-</table>
+<body>
+  <div class="container-fluid">
+	  <div class="row h-50">
+	    <div class= "col-md-6 offset-md-3 mt-5">
+		    <div class="cover-text text-center">
+		      <h1>About</h1><br>
+				  <p class="top-50 start-0 font-weight-bold text-center about-background-text">
+				    ながのCAKEは全国発送可能なケーキ屋さんです<br>
+            お子様からお年寄りの方までお召し上がりいただけるよう、<br>
+            様々なバリエーションをご用意しております。<br>
+            また、全国へ発送可能ですので「いつ」でも「どこ」でもご注文いただけます。<br>
+            ぜひご注文ください。
+          </p>
+			  </div>
+		  </div>
+		</div>
+		  <div class="col-md-6 offset-md-3 about-background-image mt-5 text-center">
+        <%= image_tag "about.jpg", alt: "about", id: "assets", class: "image", width: "400px", height: "300px" %>
+      </div>
+	</div>
+</body>

@@ -5,6 +5,12 @@
     </tr>
   </thead>
   <tbody>
+    <% if @customer.errors.any? %>
+    <%= @customer.errors.count %>件のエラーが発生しました
+    <% @customer.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+    <% end %>
   <%= form_with model: @customer,url: customer_path,local:true do |f| %>
     <tr>
       <th>氏名</th>

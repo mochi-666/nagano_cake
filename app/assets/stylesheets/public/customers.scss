@@ -1,3 +1,11 @@
 // Place all the styles related to the Public/customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.sign-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius : 10%;
+  transition    : .3s; 
+  border        : 2px solid #007bff;
+}
+
