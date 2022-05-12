@@ -1,7 +1,8 @@
 class Admin::ItemsController < ApplicationController
   before_action :authenticate_admin!
   def index
-    @item = Item.all
+    @items = Item.all
+    @item = Item.page(params[:page]).per(4)
   end
 
   def new

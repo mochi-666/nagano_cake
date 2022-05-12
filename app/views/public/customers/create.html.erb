@@ -1,20 +1,20 @@
-<table>
-  <thead>
-    <tr>
-      <th>本当に退会しますか？</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        退会すると、会員登録機能や<br>
-        これまでの購入履歴が閲覧できなくなります。<br>
-        退会する場合は、「退会する」をクリックしてください
-      </td>
-    </tr>
-    <tr>
-      <td><%= link_to "退会しない", customers_my_page_path, class: "btn btn-success"%></td>
-      <td><%= link_to "退会する", customers_withdraw_path, method: :patch,  class: "btn btn-success" %></td>
-    </tr>
-  </tbody>
-</table>
+<div class="customers__create">
+  <div style="margin-top: 200px;">
+    <p class="h5 font-weight-bold " >本当に退会しますか？</p>
+  </div>
+  <div style="margin: 20px;">
+    <p>
+      退会すると、会員登録機能や<br>
+      これまでの購入履歴が閲覧できなくなります。<br>
+      退会する場合は、「退会する」をクリックしてください
+    </p>
+  </div>
+  <div>
+    <table style="display: inline-block; margin-left: -50px;">
+      <tr>
+        <td class="mt-5" style="width: 200px;"><%= link_to "退会しない", customers_my_page_path, class: "btn btn-primary" %></td>
+        <td class="mt-5"><%= link_to "退会する", customers_withdraw_path, method: :patch,  class: "btn btn-danger" %></td>
+      </tr>
+    </table>
+  </div>
+</div>

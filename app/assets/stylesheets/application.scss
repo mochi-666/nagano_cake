@@ -17,6 +17,25 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-.pagination {
+.order__confirm__table__cell {
+  height: 65px;
+  vertical-align: middle!important;
+}
+
+.order__confirm__table__cell__1{
+  vertical-align: middle!important;
+}
+
+.order__complete {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+
+.customers__create {
+  
+  text-align: center;
+  height: 500px;
 }

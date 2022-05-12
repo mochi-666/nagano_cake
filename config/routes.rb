@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
-  devise_for :customers
+  devise_for :customers, controllers: {
+     sessions:      'public/sessions',
+     registrations: 'public/registrations'
+  }
 
   devise_for :admin, controllers: {
     sessions:      'admin/sessions',
     passwords:     'admin/passwords',
     registrations: 'admin/registrations'
   }
+
+
 
   namespace :admin do
     get '/' => 'homes#top'
@@ -16,7 +21,7 @@ Rails.application.routes.draw do
   end
 
   scope module: :public do
-    get '/' => 'homes#top'
+    root to: 'homes#top'
     get 'about' => 'homes#about'
     resources :items, only:[:index, :show]
     get 'customers/my_page' => 'customers#show'
@@ -25,7 +30,7 @@ Rails.application.routes.draw do
     resources :customers, only:[:edit, :update]
     delete 'cart_items/destroy_all' => 'cart_items#destroy_all'
     resources :cart_items, only:[:index, :update, :destroy, :create]
-    post 'orders/comfirm' => 'orders#comfirm'
+    post 'orders/confirm' => 'orders#confirm'
     get 'orders/complete' => 'orders#complete'
     resources :orders, only:[:new, :index, :show, :create]
     resources :addresses, only:[:index, :edit, :create, :update, :destroy]

@@ -1,7 +1,7 @@
 <div class="container">
-<h3>商品一覧 (全 <%= @items.count %> 件)</h3><br>
+  <h3>商品一覧 (全 <%= @items.count %> 件)</h3><br>
   <div class="row">
-	<% @items.each do |item| %>
+	  <% @items.each do |item| %>
 	  <div class="col-md-3">
 	    <p class="justify-content-center mr-2">
 	      <%= link_to item_path(item.id) do %>
@@ -10,8 +10,7 @@
         ¥<%= (item.price * 1.1).floor.to_s(:delimited) %><br>
         <% end %>
       </p>
-	  </div>
-	  <% end %>
+    </div>
+    <% end %>
   </div>
-  <%= paginate @item %>
-</div>
+  <%= paginate @item %></div>

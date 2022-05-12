@@ -6,7 +6,7 @@ class Public::OrdersController < ApplicationController
     @address_new = Address.new
   end
 
-  def comfirm
+  def confirm
     @order = Order.new(order_params)
     if params[:order][:address_id] == "1"
       @order.name = current_customer.first_name + current_customer.last_name
@@ -57,12 +57,12 @@ class Public::OrdersController < ApplicationController
       @order_item.order_id = @order.id
       @order_item.amount = cart.amount
       @order_item.price = cart.item.price
+      @order_item.save
       end
     end
-    if @order_item.save
-      redirect_to orders_complete_path
-      @cart_items.destroy_all
-    end
+    @cart_items.destroy_all
+    redirect_to orders_complete_path
+
   end
 
   def index

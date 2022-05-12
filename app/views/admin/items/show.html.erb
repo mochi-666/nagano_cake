@@ -1,7 +1,23 @@
-<h1>商品詳細</h1>
-<%= attachment_image_tag @item, :image, size: "60x60" %>
-<p>商品名　<%= @item.name %></p>
-<P>商品説明　<%= @item.introduction %></P>
-<P>税込価格　<%= @price %></P>
-<p>(税別価格)　<%= @item.price.to_s(:delimited) %></P>
-<%=link_to "編集する", edit_admin_item_path %>
+<div class="container">
+  <p class="h4" style="margin: 50px;">商品詳細</p>
+  <div style="display: inline-block; margin-left: 100px;">
+    <%= attachment_image_tag @item, :image, size: "300x300" %>
+  </div>
+  <table style="display: inline-block; margin-left: 20px;">
+    <tr>
+      <td style="display: inline-block; height: 50px;" class="font-weight-bold">商品名</td>
+      <td style="display: inline-block; height: 50px; margin-left: 44px;"><%= @item.name %></td>
+    </tr>
+    <tr>
+      <td style="display: inline-block; height: 50px;" class="font-weight-bold">商品説明</td>
+      <td style="display: inline-block; height: 50px; margin-left: 30px;"><%= @item.introduction %></td>
+    </tr>
+    <tr>
+      <td style="display: inline-block; height: 50px;" class="font-weight-bold">税込価格<br>(税別価格)</td>
+      <td style="display: inline-block; height: 50px; margin-left: 30px;"><%= @price %>(<%= @item.price.to_s(:delimited) %>)円</td>
+    </tr>
+  </table>
+  <div style="margin-left: 500px; margin-top: 50px;">
+    <%=link_to "編集する", edit_admin_item_path, class: "btn btn-success" %>
+  </div>
+</div>

@@ -1,25 +1,35 @@
-<h4>会員一覧</h4>
-<table>
-  <tr>
-    <td>
-      <th>会員ID</th>
-      <th>氏名</th>
-      <th>メールアドレス</th>
-    </td>
-  </tr>
-</table>
-<table>
-  <% @customers.each do |customer| %>
-  <tr>
-    <td><%= customer.id %></td>
-    <td>
-      <%= link_to admin_customer_path(customer.id) do %>
-      <%= customer.first_name + customer.last_name %>
+<div class="container">
+  <p class="h4">会員一覧覧</p>
+  <p class="text-right"><%= link_to"新規登録", new_admin_item_path, class: "btn btn-success" %></p>
+  <div>
+    <table style="margin-top: 30px; width: -webkit-fill-available;;">
+      <tr class="border-top border-bottom">
+        <th>会員ID</th>
+        <th>氏名</th>
+        <th>メールアドレス</th>
+        <th>会員ステータス</th>
+      </tr>
+      <% @customers.each do |customer| %>
+      <tr style="height: 50px; text-underline: auto;">
+        <td><%= customer.id %></td>
+        <td>
+          <%= link_to admin_customer_path(customer.id) do %>
+          <%= customer.first_name + customer.last_name %>
+          <% end %>
+        </td>
+        <td>
+          <%= customer.email %>
+        </td>
+        <% if customer.is_active %>
+        <td  class="font-weight-bold" style="color: #28a745;">有効</td>
+        <% else %>
+        <td  class="font-weight-bold" style="color: #dc3545;">退会</td>
+        <% end %>
+      </tr>
       <% end %>
-    </td>
-    <td><%= customer.email %></td>
-  </tr>
-  <% end %>
-  <td><%= paginate @customers %></td>
-  
-</table>
+    </table>
+    <div style="margin-left: 450px; margin-top: 50px;">
+     <%= paginate @customers %>
+    </div>
+  </div>
+</div>

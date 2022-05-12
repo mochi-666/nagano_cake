@@ -1,65 +1,63 @@
-<table>
-  <thead>
-    <th>注文履歴詳細</th>
-  </thead>
-  <table>
-    <tr>
-      <th>注文情報</th>
-    </tr>
-    <tr>
-      <td>注文日</td>
-      <td><%= @order.created_at %></td>
-    </tr>
-    <tr>
-      <td>配送先</td>
-      <td>
-        〒<%= @order.postal_code %><br>
-        <%= @order.address %><br>
-        <%= @order.name %>
-      </td>
-    </tr>
-    <tr>
-      <td>支払方法</td>
-      <td><%= @order.payment_method_i18n %></td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <th>請求情報</th>
-    </tr>
-   <tr>
-      <td>商品合計</td>
-      <td><%= @total.to_s(:delimited) %></td>
-    </tr>
-    <tr>
-      <td>送料</td>
-      <td><%= @order.postage %></td>
-    </tr>
-    <tr>
-      <th>請求金額</th>
-      <th><%= @total_payment.to_s(:delimited) %></th>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <th>注文内容</th>
-    </tr>
-    <tr>
-      <td>商品名</td>
-      <td>単価(税込)</td>
-      <td>個数</td>
-      <td>小計</td>
-    </tr>
-    <% @order_items.each do |order_item| %>
-    <tr>
-      <td><%= order_item.item.name %></td>
-      <td><%= (order_item.item.price * 1.1).floor.to_s(:delimited) %></td>
-      <td><%= order_item.amount %></td>
-      <td>
-        <% subtotal = ((order_item.item.price*order_item.amount)*1.1).to_i %>
-        <%= subtotal %>
-      </td>
-    </tr>
-    <% end %>
-  </table>
-</table>
+<div class="container">
+  <p class="h4 m-5">注文履歴詳細</p>
+  <div style="display: inline-block; margin-right: 50px;">
+    <p class="h5 font-weight-bold ">注文情報</p>
+    <table class="table table-bordered">
+      <tr>
+        <td style="width: 140px;">注文日</td>
+        <td style="width: 300px;"><%= @order.created_at %></td>
+      </tr>
+      <tr>
+        <td style="width: 150px;">配送先</td>
+        <td style="width: 400px;">
+          〒<%= @order.postal_code %><br>
+          <%= @order.address %><br>
+          <%= @order.name %>
+        </td>
+      </tr>
+      <tr>
+        <td>支払方法</td>
+        <td><%= @order.payment_method_i18n %></td>
+      </tr>
+    </table>
+  </div>
+  <div style="display: inline-block;">
+    <p class="h5 font-weight-bold">請求情報</p>
+    <table class="table table-bordered">
+      <tr>
+        <td style="width: 150px;">商品合計</td>
+        <td style="width: 150px;"><%= @total.to_s(:delimited) %></td>
+      </tr>
+      <tr>
+        <td style="width: 150px;">送料</td>
+        <td style="width: 150px;"><%= @order.postage %></td>
+      </tr>
+      <tr>
+        <th style="width: 150px;">請求金額</th>
+        <th style="width: 150px;"><%= @total_payment.to_s(:delimited) %></th>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <p class="h5 font-weight-bold">注文内容</p>
+    <table class="table table-bordered",  style="width: 600px;">
+      <tr>
+        <td style="width: 300px;">商品名</td>
+        <td>単価(税込)</td>
+        <td>個数</td>
+        <td>小計</td>
+      </tr>
+      <% @order_items.each do |order_item| %>
+      <tr>
+        <td style="width: 300px;"><%= order_item.item.name %></td>
+        <td><%= (order_item.item.price * 1.1).floor.to_s(:delimited) %></td>
+        <td><%= order_item.amount %></td>
+        <td>
+          <% subtotal = ((order_item.item.price*order_item.amount)*1.1).to_i %>
+          <%= subtotal %>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

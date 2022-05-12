@@ -1,32 +1,30 @@
-<table>
-  <theader>
-    <th>注文履歴一覧</th>
-  </theader>
-  <tbody>
-    <tr>
-      <th>購入日時</th>
-      <th>購入者</th>
-      <th>注文個数</th>
-    </tr>
-  </tbody>
-  <tbody>
-    <% @orders.each do |order| %>
-    <tr>
-      <td>
-        <%= link_to admin_order_path(order.id) do %>
-        <%= order.created_at %>
+<div class="container">
+  <p class="h4">注文履歴一覧</p>
+  <div>
+    <table style="margin-top: 30px; width: -webkit-fill-available;;">
+      <tr class="border-top border-bottom">
+        <th>購入日時</th>
+        <th>購入者</th>
+        <th>注文個数</th>
+      </tr>
+      <% @orders.each do |order| %>
+      <tr style="height: 50px; text-underline: auto;">
+        <td>
+          <%= link_to admin_order_path(order.id) do %>
+          <%= order.created_at %>
+          <% end %>
+        </td>
+        <td><%= order.customer.first_name + order.customer.last_name %></td>
+        <% total = 0 %>
+        <% order.order_items.each do |order_item| %>
+        <% total += order_item.amount %>
         <% end %>
-      </td>
-      <td><%= order.customer.first_name + order.customer.last_name %></td>
-      <% total = 0 %>
-      <% order.order_items.each do |order_item| %>
-      <% total += order_item.amount %>
+        <td><%= total %></td>
+      </tr>
       <% end %>
-      <td><%= total %></td>
-    </tr>
-    <% end %>
-    <tr>
-      <td><%= paginate @orders %></td>
-    </tr>
-  </tbody>
-</table>
+    </table>
+    <div style="margin-left: 450px; margin-top: 50px;">
+      <%= paginate @orders %>
+    </div>
+  </div>
+</div>
